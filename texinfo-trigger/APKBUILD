@@ -1,0 +1,16 @@
+# Contributor: eugenefil <fil.eugene@gmail.com>
+# Maintainer: eugenefil <fil.eugene@gmail.com>
+
+pkgname=texinfo-trigger
+pkgver=0.1.0
+pkgrel=0
+pkgdesc="The trigger to update Info directory file"
+url="https://github.com"
+arch="noarch"
+options="!check"
+license="GPL-3.0-or-later"
+triggers="texinfo-trigger.trigger=/usr/share/info"
+
+package() {
+	mkdir -p "$pkgdir"
+}
