@@ -668,6 +668,7 @@ CONFIG_DEFAULT_TCP_CONG="cubic"
 # CONFIG_ATM is not set
 # CONFIG_L2TP is not set
 # CONFIG_BRIDGE is not set
+# CONFIG_NET_DSA is not set
 # CONFIG_VLAN_8021Q is not set
 # CONFIG_DECNET is not set
 # CONFIG_LLC2 is not set
@@ -720,7 +721,7 @@ CONFIG_NET_FLOW_LIMIT=y
 # CONFIG_PSAMPLE is not set
 # CONFIG_NET_IFE is not set
 # CONFIG_LWTUNNEL is not set
-# CONFIG_FAILOVER is not set
+CONFIG_FAILOVER=y
 # CONFIG_ETHTOOL_NETLINK is not set
 
 #
@@ -948,7 +949,56 @@ CONFIG_SCSI_MOD=y
 # end of IEEE 1394 (FireWire) support
 
 # CONFIG_MACINTOSH_DRIVERS is not set
-# CONFIG_NETDEVICES is not set
+CONFIG_NETDEVICES=y
+CONFIG_NET_CORE=y
+# CONFIG_BONDING is not set
+# CONFIG_DUMMY is not set
+# CONFIG_WIREGUARD is not set
+# CONFIG_EQUALIZER is not set
+# CONFIG_NET_TEAM is not set
+# CONFIG_MACVLAN is not set
+# CONFIG_IPVLAN is not set
+# CONFIG_VXLAN is not set
+# CONFIG_GENEVE is not set
+# CONFIG_BAREUDP is not set
+# CONFIG_GTP is not set
+# CONFIG_MACSEC is not set
+# CONFIG_NETCONSOLE is not set
+# CONFIG_TUN is not set
+# CONFIG_TUN_VNET_CROSS_LE is not set
+# CONFIG_VETH is not set
+CONFIG_VIRTIO_NET=y
+# CONFIG_NLMON is not set
+# CONFIG_ARCNET is not set
+# CONFIG_ETHERNET is not set
+# CONFIG_FDDI is not set
+# CONFIG_HIPPI is not set
+# CONFIG_PHYLIB is not set
+# CONFIG_MDIO_DEVICE is not set
+
+#
+# PCS device drivers
+#
+# end of PCS device drivers
+
+# CONFIG_PPP is not set
+# CONFIG_SLIP is not set
+
+#
+# Host-side USB support is needed for USB Network Adapter support
+#
+# CONFIG_WLAN is not set
+# CONFIG_WAN is not set
+
+#
+# Wireless WAN
+#
+# CONFIG_WWAN is not set
+# end of Wireless WAN
+
+# CONFIG_VMXNET3 is not set
+CONFIG_NET_FAILOVER=y
+# CONFIG_ISDN is not set
 
 #
 # Input device support
